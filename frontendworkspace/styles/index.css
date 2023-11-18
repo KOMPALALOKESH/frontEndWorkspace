@@ -1,0 +1,236 @@
+html {
+	scroll-behavior: smooth;
+}
+
+/* Reset default styles */
+body {
+	font-family: sans-serif;
+	background-color: rgb(168, 178, 186);
+	cursor: pointer;
+}
+
+/* Text selection style */
+::selection {
+	color: rgba(174, 152, 121, 255);
+	background: rgb(12, 44, 68);
+}
+
+/* Navigation bar styles */
+#nav-bar {
+	position: fixed;
+	left: 25%;
+	right: 25%;
+	top: 1%;
+	padding: 1%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 50%;
+	background-color: rgb(66, 92, 109);
+	border-radius: 10px;
+	box-shadow: 0px 2px 25px rgb(66, 92, 109);
+	font-size: medium;
+	margin: auto;
+}
+
+/* Navigation bar image styles */
+.nav-bar-img {
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+}
+
+/* Navigation bar text styles */
+.nav-bar-text a {
+	color: aliceblue;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+/* Hover effect on navigation bar text */
+.nav-bar-text a:hover {
+	border-radius: 0 0 2px 2px;
+	border-bottom: 3px solid #ebdac0;
+}
+
+/* hero section */
+.hero-section {
+	display: flex;
+	margin: 5%;
+	align-items: center;
+	justify-items: center;
+	margin-top: 5em;
+}
+
+/* hero section text para1 */
+.hero-section-text-para1 {
+	font-size: 3em;
+	font-weight: bold;
+	color: rgb(66, 92, 109);
+}
+
+/* hero section text para2 */
+.hero-section-text-para2 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: rgb(66, 92, 109);
+}
+
+/* hero section text para2 */
+.hero-section-text-para3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: rgb(66, 92, 109);
+	background-color: #b69a70;
+	box-shadow: 5px 5px 5px 5px #b69a70;
+}
+
+/* hero section image */
+.hero-section img {
+	width: 23%;
+	height: 23%;
+	margin: 2%;
+	border-radius: 50%;
+	box-shadow: 0px 2px 25px rgb(66, 92, 109);
+}
+
+/* get started */
+.get-started {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-size: 1.3em;
+	color: white;
+	background-color: rgb(66, 92, 109);
+	box-shadow: 0px 2px 25px rgb(66, 92, 109);
+	width: fit-content;
+	margin: 0 auto;
+	margin-bottom: 2%;
+	padding: 0.5em 0.5em 0.5em 1em;
+	border-radius: 5rem;
+}
+
+.get-started :hover,
+.get-started-img :hover {
+	font-size: 1.2em;
+	color: #b69a70;
+	transition: font-size 0.8s;
+}
+
+
+
+
+/* features heading */
+.features-heading {
+	font-size: 3em;
+	font-weight: bold;
+	color: rgb(66, 92, 109);
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	border-bottom: 1px solid rgb(66, 92, 109);
+	width: fit-content;
+	margin: 0 auto;
+}
+
+/* features text */
+.features-text {
+	color: rgb(66, 92, 109);
+	text-align: center;
+	margin: 2% 15%;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* offers heading */
+.offers-heading {
+	font-size: 3em;
+	font-weight: bold;
+	color: rgb(66, 92, 109);
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	border-bottom: 1px solid rgb(66, 92, 109);
+	width: fit-content;
+	margin: 0 auto;
+}
+
+/* offers text */
+.offers-text {
+	color: rgb(66, 92, 109);
+	text-align: center;
+	margin: 2% 15%;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* subscribe */
+.subscribe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10rem;
+}
+
+/* subscribe email */
+.subscribe-email {
+	width: 20em;
+	height: 3em;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* subscribe button */
+.subscribe-btn {
+	font-size: 1em;
+	height: 2.85em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: white;
+	background-color: rgb(66, 92, 109);
+}
+
+/* footer */
+footer {
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+	color: white;
+	background-color: rgb(66, 92, 109);
+}
+
+/* responsive design */
+@media screen and (max-width: 900px){
+	#nav-bar {
+		top: 1%;
+		left: 1%;
+		right: 1%;
+		width: 90%;
+		height: 5vh;
+		font-size: medium;
+	}
+
+	.nav-bar-img {
+		display: none;
+	}
+
+	.get-started {
+		margin-top: 1em;
+	}
+
+	.hero-section {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.hero-section-text-para1,
+	.features-heading,
+	.offers-heading {
+		font-size: 2em;
+	}
+}

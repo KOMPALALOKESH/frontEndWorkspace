@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/forms.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="icon" type="image/x-icon" href="../styles/media/logo.png" />
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav id="nav-bar">
+        <img class="nav-bar-img" src="../styles/media/logo.png" alt="home page" />
+        <div class="nav-bar-text"><a href="">Products</a></div>
+        <div class="nav-bar-text"><a href="">Blog</a></div>
+        <div class="nav-bar-text"><a href="">Services</a></div>
+        <div class="nav-bar-text"><a href="#offers">Offers</a></div>
+        <div class="nav-bar-text" onclick="showLogin()"><a href="">Sign&nbsp;In</a></div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+    <div class="container" id="login">
+        <div class="container-close" id="close">X</div>
+        <div class="container-login">LOGIN</div>
+        <form class="container-form">
+            <div class="container-form-email">
+                <label class="container-form-email-text" for="email" style="color: rgb(66, 92, 109);">Email</label>
+                <input class="container-form-email-input" placeholder="" required>
+            </div>
+            <div class="container-form-password">
+                <label class="container-form-password-text" for="email"
+                    style="color: rgb(66, 92, 109);">Password</label>
+                <input class="container-form-password-input" type="password" required>
+                <a href="" class="container-form-password-forgot">forgot password?</a>
+            </div>
+            <center><button type="submit">Login</button></center>
+            <a href="" class="register" onclick="showRegister()">
+                <center>New User?/register</center>
+            </a>
+        </form>
+    </div>
+
+    <div class="signup" id="signup">
+        <div class="container-close" onclick="close()">X</div>
+        <div class="signup-login">REGISTER</div>
+        <form class="signup-form">
+            <div class="signup-form-input">
+                <label class="signup-form-input-text" for="username" style="color: rgb(66, 92, 109);">Username</label>
+                <input class="signup-form-email-input" type="text" id="username" placeholder="" required>
+            </div>
+            <div class="signup-form-email">
+                <label class="signup-form-email-text" for="email" style="color: rgb(66, 92, 109);">Email</label>
+                <input class="signup-form-email-input" type="email" id="email" placeholder="" required>
+            </div>
+            <div class="signup-form-password">
+                <label class="signup-form-password-text" for="password"
+                    style="color: rgb(66, 92, 109);">Password</label>
+                <input class="signup-form-password-input" type="password" id="password" placeholder="" required>
+                <a href="" class="signup-form-password-forgot">forgot password?</a>
+            </div>
+            <div class="signup-form-input">
+                <label class="signup-form-input-text" for="confirm-password" style="color: rgb(66, 92, 109);">Confirm
+                    Password</label>
+                <input class="signup-form-password-input" type="password" id="confirm-password" placeholder="" required>
+            </div>
+            <center><button type="submit">Sign Up</button></center>
+            <a href="" class="login" onclick="showLogin()">
+                <center>Already User?/Login</center>
+            </a>
+        </form>
+    </div>
+
+
+
+    <div class="hero-section">
+        <div class="hero-section-text">
+            <div class="hero-section-text-para1">
+                Experience Beauty, Serenity, and Self-Care Like Never Before
+            </div>
+            <br />
+            <div class="hero-section-text-para2">
+                Are you ready to rejuvenate your body, mind, and soul? At Tranquil
+                Beauty Spa, we're here to make you feel and look your absolute best.
+                Step into a world of pampering and relaxation where your well-being is
+                our top priority.
+            </div>
+            <br />
+            <mark class="hero-section-text-para3">
+                Nestled in the ❤️ of Tirupati, our spa is an oasis of tranquility.
+                From the moment you step through our doors, you'll be enveloped in an
+                ambiance of serenity and luxury. Our beautifully designed spaces are
+                dedicated to helping you unwind and escape the stresses of everyday
+                life.
+            </mark>
+        </div>
+        <img src="../styles/media/logo.png" alt="hero-section-logo" class="hero-section-logo" />
+    </div>
+
+    <div class="get-started" type="button">
+        <div>Get Started</div>
+        <img src="../styles/media/getstarted.png" alt="getstarted" width="30em" height="30em" id="get-started-img" />
+    </div>
+
+    <div class="features">
+        <div class="features-heading">Why Choose Us?</div>
+        <div class="features-text" style="text-align: center">
+            <img src="../styles/media/quality.png" alt="features-quality" class="features-quality" width="100em"
+                height="100em" />
+            <p>
+                At Tranquil Beauty Spa, we believe that beauty and wellness are highly
+                personal. We don't offer one-size-fits-all solutions.
+            </p>
+        </div>
+        <div class="features-text" style="text-align: center">
+            <img src="../styles/media/safe.png" alt="features-safe" class="features-safe" width="100em" height="100em" />
+            <p>
+                Our selection of skincare, haircare, and beauty products is curated
+                with a focus on quality and effectiveness.
+            </p>
+        </div>
+        <div class="features-text" style="text-align: center">
+            <img src="../styles/media/service.png" alt="features-service" class="features-service" width="120em"
+                height="120em" />
+            <p>
+                Your health and safety are paramount to us. Our spa maintains the
+                highest standards of cleanliness and hygiene.
+            </p>
+        </div>
+    </div>
+
+    <div id="offers">
+        <div class="offers-heading">Offers/Discounts</div>
+        <div class="offers-text" style="text-align: center">
+            Offers will be coming soon..<br>
+            for more regular updates stay tuned with email..
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <input type="email" placeholder="Enter your email" class="subscribe-email" required />
+        <button class="subscribe-btn">Subscribe</button>
+    </div>
+
+    <footer>All made with ❤️.</footer>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
